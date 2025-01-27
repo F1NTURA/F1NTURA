@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background: black;
+  box-sizing: border-box;
+}
+
+.cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.cub {
+  background: linear-gradient(red,rgb(255, 149, 0));
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  animation: f1ntura 1s ease infinite alternate;
+  transform: scale(1 ,2 );
+}
+
+@keyframes f1ntura {
+  from{
+    transform: scale(1,1) rotate(0deg);
+    
+  }
+  to {
+    transform: scale(2,2) rotate(360deg);
+    box-shadow: -1px 5px 19px 9px rgba(255, 0, 0, 0.7);
+  }
+}
